@@ -2,4 +2,4 @@
 
 service squid start
 
-exec gosu planet9 $@
+/home/planet9/planet9-linux
