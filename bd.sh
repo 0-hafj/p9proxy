@@ -1,3 +1,5 @@
+#!/bin/bash
+
 docker stop p9proxy
 docker rm p9proxy
 docker build -t tlodevacr.azurecr.io/p9proxy:latest .
