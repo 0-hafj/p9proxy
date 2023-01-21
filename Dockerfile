@@ -1,4 +1,4 @@
-FROM neptunesoftware/planet9:v22.10.1
+FROM neptunesoftware/planet9:v22.10.2
 
 USER root
 RUN apt update -y && apt install procps net-tools squid -y
