@@ -1,2 +1,4 @@
 google.com
 www.google.com
+login.microsoftonline.com
+graph.microsoft.com
