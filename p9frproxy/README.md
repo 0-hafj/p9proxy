@@ -1,6 +1,6 @@
-# p9proxy
+# p9frproxy
 
-Neptune Planet9 Image to include a squid proxy to simulate running Planet9 with embedded squid and HAProxy for egress and ingress traffic. Built for running on k8s with environments variables in deploy or configmap.
+Neptune Planet9 Image with embedded squid and HAProxy for egress and ingress traffic. Built for running on k8s with environments variables in deploy or configmap.
 
 ### example deployment 
 ```yaml
@@ -16,9 +16,6 @@ Neptune Planet9 Image to include a squid proxy to simulate running Planet9 with 
           limits:
             cpu: 1500m
             memory: 4Gi
-        ports:
-        - containerPort: 8080
-          name: planet9
         env:
         - name: HTTPS_HOSTED
           value: "TRUE"
