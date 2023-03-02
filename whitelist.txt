@@ -3,3 +3,4 @@ www.google.com
 login.microsoftonline.com
 graph.microsoft.com
 azasapsoyci01.sfso.no
+a0y96vpzn.accounts.ondemand.com
