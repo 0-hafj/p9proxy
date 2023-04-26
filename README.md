@@ -1,6 +1,13 @@
 # p9proxy
 
-Neptune Planet9 Image to include a squid proxy to simulate running Planet9 behind a forward proxy. Built for running on k8s with environments variables in deploy or configmap.
+Repo to build Neptune Planet9 image with forward and reverse proxy.  
+Image built to be deployed to Kubernetes with required env variables in deploy or cm.
+
+Folder ``p9proxy`` including config for squid forward proxy  
+Folder ``p9frproxy`` including config for squid forward proxy and HAProxy as reverse proxy.  
+
+
+
 
 ### example deployment 
 ```yaml
@@ -28,5 +35,7 @@ Neptune Planet9 Image to include a squid proxy to simulate running Planet9 behin
           value: "http://localhost:3128"
         - name: HTTPS_PROXY
           value: "http://localhost:3128"
+        - name: NO_PROXY ## requests to these addresses are not forwarded to squid
+          value: ".domain.no, .domain.com"          
 ```
 
