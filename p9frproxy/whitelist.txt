@@ -6,3 +6,4 @@ azasapsoyci01.sfso.no
 a0y96vpzn.accounts.ondemand.com
 test.idporten.no
 ag6g9nmxs.accounts.ondemand.com
+github.com

@@ -1,4 +1,4 @@
-FROM neptunesoftware/planet9:v23.10.0
+FROM neptunesoftware/planet9:v23.10.1
 
 USER root
 RUN apt update -y && apt install procps net-tools squid haproxy haproxyctl -y
